@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <script src="Stopwatch.js" asyn></script> <!--Run asynchronously with the rest of the page-->
+    <script src="Guessgame.js" defer></script> <!--Run when the page has finished parsing-->
+</head>
+<body>
+    <div>
+        <h1>Run stopwatch in console</h1>
+        <hr>
+        <h1>Number Guessing Game</h1>
+        <p>
+            We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. 
+            We'll tell you if your guess was too high or too low.
+        </p>
+        <div>
+            <label for="guessedNumber">Enter a guess: </label>
+            <input type="text" id="guessedNumber" class="guessField">
+            <button type="submit" class="guessSubmit">Submit guess</button>
+        </div>
+    </div>
+    <div class="resultDiv">
+        <p class="prevGuess"></p>
+        <p class="result"></p>
+        <p class="highLow"></p>
+    </div>
+</body>
+
+
+</html>
